@@ -1,0 +1,140 @@
+body {
+    width: 100%;
+    background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 60px);
+    /* grid-gap: 20px; */
+    width: 500px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    margin: 150px auto;
+}
+
+.numberequals {
+    display: grid;
+    grid-column: -2;
+    grid-row: 2/span 4;
+    background: rgb(255, 165, 0) !important;
+    align-content: center;
+}
+
+.numberequals:hover {
+    background: rgb(29, 31, 30) !important;
+}
+
+
+.display {
+    display: grid;
+    text-align: right !important;
+    color: white;
+    grid-column: 1/-1;
+    background: black !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.plus-op,
+.minus-op,
+.div-op,
+.multi-op {
+    background: wheat !important;
+}
+
+.item:hover {
+    background: rgb(29, 31, 30);
+}
+
+.item {
+    display: grid;
+    background: whitesmoke;
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 150%;
+    align-content: center;
+}
+
+.calculator_keys {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(5, 60px);
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 120%;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    /* border: 1px solid red; */
+    padding-bottom: 0px;
+    text-align: center;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav h1 [class*="fa-s"] {
+    font-size: 100%;
+    color: black;
+
+}
+
+nav h1:hover {
+    color: aqua;
+}
+
+nav [class*="fa-"] {
+    font-size: 200%;
+}
+
+nav {
+    /* font-size: 150%; */
+    padding: 1rem;
+    margin-top: -150px;
+
+    /* position: sticky; */
+    /* border: 1px solid red; */
+}
+
+h1 {
+    text-align: center;
+
+    /* border: 1px solid red; */
+}
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: -100px;
+    }
+
+    nav li:first-child {
+
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
